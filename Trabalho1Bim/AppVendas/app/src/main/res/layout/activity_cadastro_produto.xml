@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".CadastroProdutoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro de Produtos"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descrição"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite a descrição do produto"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/edtDescricaoProduto"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Valor"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o valor do produto ex: 11.99"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/edtValorProduto" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_save"
+        android:text="Salvar"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:id="@+id/btnSalvarProduto"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+                android:id="@+id/txvListaProdutos"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
